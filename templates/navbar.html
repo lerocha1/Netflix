@@ -1,0 +1,36 @@
+{% load static %}
+
+<nav class="w-full flex justify-between itens-center py-3 px-4 fixed z-50">
+    <div class="w-6/12">
+        <a href="admin">
+            <img class="w-5/12" src="{% static 'images/netiflix2.png' %}">
+        </a>
+    </div>
+
+    <div class="w-6/12 flex flex-nowrap justify-end">
+        <div class="mr-2">
+            <form>
+                <input type="text" class="py-1 px-2 rounded-md text-black" placeholder="Pesquisar..">
+            </form>
+        </div>
+
+        <div class="mr-2">
+            <a>
+                <button class="bg-red-600 tex_write py-1 px-3 rounded-md">
+                    Login
+                </button>
+            </a>
+        </div>
+
+        <div class="mr-2">
+            <div>
+                <a>
+                <button class="bg-red-600 tex_write py-1 px-3 rounded-md">
+                    Editar Perfil
+                </button>
+            </a>
+            </div>
+        </div>
+    </div>
+
+</nav>

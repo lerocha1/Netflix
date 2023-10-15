@@ -23,3 +23,9 @@
 ****Criado superuser = leandro / Tob@2019
 **** tem um segundo leandro@lrcorp.com    sem o br, com mesma senha.
 ****instalado DB Browser DB Lite para visualizar o banco criado default pelo Django.
+
+
+Para ajudar no front end
+**tailwind
+**bootstrap
+

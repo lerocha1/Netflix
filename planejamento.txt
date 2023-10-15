@@ -1,0 +1,25 @@
+-Homepage
+-Fazer login e criar Conta em site (Usuario e Autenticação)
+    * Email
+    * username
+    * senha
+    * filmes ja visto
+    * editar perfil
+
+- Filmes e series
+    * thumbs
+    * titulo
+    * descrição
+    * categoria
+    * quantidade de views
+    * data de criação
+    * Episodios
+        - videos 
+        - titulos
+
+- Barra de pedquisa
+
+
+****Criado superuser = leandro / Tob@2019
+**** tem um segundo leandro@lrcorp.com    sem o br, com mesma senha.
+****instalado DB Browser DB Lite para visualizar o banco criado default pelo Django.

@@ -26,6 +26,6 @@
 
 
 Para ajudar no front end
-**tailwind
-**bootstrap
+**tailwind - https://tailwindui.com/?ref=top
+**bootstrap - https://getbootstrap.com/
 

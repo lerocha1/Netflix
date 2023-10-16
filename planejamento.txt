@@ -29,3 +29,7 @@ Para ajudar no front end
 **tailwind - https://tailwindui.com/?ref=top
 **bootstrap - https://getbootstrap.com/
 
+
+Para icones, 2 recomendações
+**** ionic.io
+**** fontawesome.com

@@ -13,7 +13,7 @@ LISTA_CATEGORIAS = (
 )
 
 LISTA_SEXO = (
-    ("MASCULIO",'MAsculino'),
+    ("MASCULIO",'Masculino'),
     ("FEMININO","Feminino"),
 )
 #criar filme

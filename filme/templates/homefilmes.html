@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block titulo %}
+HomeFilmes HasheFlix
+{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="py-32">
+    <h1>Essa é a nossa HomeFilmes!</h1>
+    {% for filme in lista_filmes %}
+        <hr>
+        <p>{{ filme }}</p>
+        <p>{{ filme.descrição }}</p>
+        <img src="{{filme.thumb.url}}" alt="" width= "200" height = 100/>>
+    {% endfor %}
+</div>
+{% endblock %}

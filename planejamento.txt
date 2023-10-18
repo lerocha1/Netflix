@@ -31,5 +31,5 @@ Para ajudar no front end
 
 
 Para icones, 2 recomendações
-**** ionic.io
+**** ionic.io/ionicons/usage
 **** fontawesome.com

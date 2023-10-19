@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block titulo %}
+HomeSeries HasheFlix
+{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="py-32">
+    <h1>Essa é a nossa HomeSéries!</h1>
+    {% for seriado in object_list %} 
+        <hr>
+        <p>{{ seriado }}</p>
+        <p>{{ seriado.descrição }}</p>
+        <img src="{{seriado.thumb.url}}" alt="" width= "200" height = 100/>>
+    {% endfor %}
+</div>
+{% endblock %}

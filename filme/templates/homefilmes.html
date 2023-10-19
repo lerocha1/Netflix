@@ -7,7 +7,7 @@ HomeFilmes HasheFlix
 {% block content %}
 <div class="py-32">
     <h1>Essa é a nossa HomeFilmes!</h1>
-    {% for filme in lista_filmes %}
+    {% for filme in object_list %} 
         <hr>
         <p>{{ filme }}</p>
         <p>{{ filme.descrição }}</p>

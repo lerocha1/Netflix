@@ -5,6 +5,7 @@ HomeSeries HasheFlix
 {% load static %}
 
 {% block content %}
+
 <div class="py-32">
     <h1>Essa é a nossa HomeSéries!</h1>
     {% for seriado in object_list %} 
@@ -14,4 +15,12 @@ HomeSeries HasheFlix
         <img src="{{seriado.thumb.url}}" alt="" width= "200" height = 100/>>
     {% endfor %}
 </div>
-{% endblock %}
+
+<footer class="px-5 py-10">
+    <ul class="flex justify-between items-center">
+        <li>2023</li>
+        <li>Feito com Python (Django)</li>
+        <li>by LRCORP</li>
+    </ul>
+</footer>
+{% endblock %} 

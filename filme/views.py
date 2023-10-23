@@ -22,9 +22,9 @@ class Homefilmes(ListView):
     model = Filme #quando usa class para uma lista o padrão é object_lis, precisa trocar no html do filmes
 
 class Detalhesfilme(DetailView):
-    template_name = 'homefilmes.html'
+    template_name = 'detalhefilmes.html'
     model = Filme
-    
+
 class Seriefilmes(ListView):
     template_name = "seriefilmes.html"
     model = Seriado

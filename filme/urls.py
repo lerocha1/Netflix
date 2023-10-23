@@ -8,5 +8,5 @@ urlpatterns = [
     path('', Homepage.as_view()),
     path('filmes', Homefilmes.as_view() ),
     path('serie', Seriefilmes.as_view()),
-    path('filmes/<int:pk>',Detalhesfilme.as_view()),
+    path('filmes/<int:pk>', Detalhesfilme.as_view()),
     ]

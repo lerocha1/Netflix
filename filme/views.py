@@ -28,3 +28,7 @@ class Detalhesfilme(DetailView):
 class Seriefilmes(ListView):
     template_name = "seriefilmes.html"
     model = Seriado
+
+class Detalhesserie(DetailView):
+    template_name = 'detalheseries.html'
+    model = Seriado

@@ -1,7 +1,7 @@
 #para cada pagina precisa de 3 coisas
 #url - view - template --- Sempre essas 3 coisas!
 from django.urls import path
-from .views import  Homefilmes, Homepage, Seriefilmes, Detalhesfilme
+from .views import  Homefilmes, Homepage, Seriefilmes, Detalhesfilme, Detalhesserie
 
 
 urlpatterns = [
@@ -9,4 +9,5 @@ urlpatterns = [
     path('filmes', Homefilmes.as_view() ),
     path('serie', Seriefilmes.as_view()),
     path('filmes/<int:pk>', Detalhesfilme.as_view()),
+    path('serie/<int:pk>', Detalhesserie.as_view())
     ]

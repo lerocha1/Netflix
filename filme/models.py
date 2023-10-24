@@ -49,3 +49,8 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.usuario
+    
+class Episodio(models.Model):
+    filme = models.ForeignKey("Filme", related_name='episodios', on_delete=models.CASCADE)
+    titulo = models.CharField(max_length=100)
+    video = models.URLField()

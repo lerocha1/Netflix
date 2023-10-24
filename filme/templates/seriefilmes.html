@@ -10,7 +10,7 @@ HomeSeries HasheFlix
     <h1>Essa é a nossa HomeSéries!</h1>
     {% for seriado in object_list %} 
         <hr>
-        <p>{{ seriado }}</p>
+        <a href="{% url 'filme:detalhesserie' seriado.id %"><p>{{ seriado }}</p></a>
         <p>{{ seriado.descrição }}</p>
         <img src="{{seriado.thumb.url}}" alt="" width= "200" height = 100/>>
     {% endfor %}

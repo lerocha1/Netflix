@@ -9,6 +9,12 @@ HomeFilmes HasheFlix
     <h1>Esse é o detalhe do Filme: {{object.titulo}} </h1>
     <p>{{object}}</p>
     <p>{{object.descrição}}</p>
-    <img src="{{ object.thumb.url }}">      
+    <img src="{{ object.thumb.url }}">
+    <h2>Episódios</h2>      
+    {% for episodio in object.episodios.all%}
+    <a href="{{episodio.video}}">
+        <p>Episódio {{forloop.counter}}:{{episodio.titulo}}</p>
+    </a>
+    {% endfor %}
 </div>
 {% endblock %}

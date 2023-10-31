@@ -1,3 +1,4 @@
+
 from django.shortcuts import render
 from .models import Filme, Seriado
 from django.views.generic import TemplateView, ListView, DetailView
@@ -24,6 +25,13 @@ class Homefilmes(ListView):
 class Detalhesfilme(DetailView):
     template_name = 'detalhefilmes.html'
     model = Filme
+
+    def get_context_data(self, **kwargs):
+        context =  super(Detalhesfilme, self).get_context_data(**kwargs)
+        # filtrar a minha tabela de filmes, pegando os filmes cuja categoria é igual a categoria do filme da página (object)
+        filmes_relacionados = Filme.objects.filter(categoria=self.object().categoria) [0:5]
+        context["filmes_relacinados"] = filmes_relacionados
+        return context
 
 class Seriefilmes(ListView):
     template_name = "seriefilmes.html"

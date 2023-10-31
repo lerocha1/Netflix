@@ -19,4 +19,15 @@ HomeFilmes HasheFlix
         </a>    
         {% endfor %}    
 </div>
+<div class='py-10'>
+    <h2>Filmes Relacionados</h2>
+    {% for filme in filmes_relacionado %}
+    <p>
+        <a href="{% url 'filme:detalhesfilme' filme.id %}">
+            {{filme.titulo}}
+        </a>
+    </p>
+    {% endfor %}
+
+</div>
 {% endblock %}

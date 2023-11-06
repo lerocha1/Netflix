@@ -1,4 +1,6 @@
 
+from typing import Any
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from .models import Filme, Seriado
 from django.views.generic import TemplateView, ListView, DetailView
@@ -26,10 +28,16 @@ class Detalhesfilme(DetailView):
     template_name = 'detalhefilmes.html'
     model = Filme
 
+    def get(self, request, *args, **kwargs):
+        filme = self.get_object()
+        filme.visualizacoes += 1
+        filme.save()
+        return super(Detalhesfilme, self).get(request, *args, **kwargs) #redireciona o usuario para uma url final
+
     def get_context_data(self, **kwargs):
         context =  super(Detalhesfilme, self).get_context_data(**kwargs)
         # filtrar a minha tabela de filmes, pegando os filmes cuja categoria é igual a categoria do filme da página (object)
-        filmes_relacionados = Filme.objects.filter(categoria=self.object().categoria) [0:5]
+        filmes_relacionados = Filme.objects.filter(categoria=self.get_object().categoria) [0:5]
         context["filmes_relacinados"] = filmes_relacionados
         return context
 

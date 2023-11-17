@@ -13,11 +13,11 @@ HomeFilmes HasheFlix
                 {{object.titulo}}
             </h2>
             <p class="w-11/12 md:w-5/12 font-medium text-white my-4">
-                Descrição
+                {{object.descrição}}
             </p>
             <div class="flex my-4">
                 <a href="#">
-                    <button class="flex items-center bg-white px-5 rounded-md" style="...">
+                    <button class="flex items-center bg-white px-5 rounded-md text-black" style="...">
                         <ion-icon name="play" class="text-2xl"></ion-icon>
                         <span class="ml-3 font-medium">
                             Play
@@ -30,17 +30,16 @@ HomeFilmes HasheFlix
     <section class="bg-primary_black flex justify-center py-10">
         <div class="p-8 w-10/12 relative">
             <h2 class="text-gray-200 text-3xl font-medium">
-                Description
+                {{object.descrição}}
             </h2>
             <div class="flex-justify-left items-center min-w-full movie_lis">
                 <p class="text-gray-200 text-3xl font-medium">
-                    Descrição
-                    Visualizações:
+                     Visualizações: {{object.visualizacoes}}
                 </p>
             </div>
             <div style="...">
                 <h2 class="text-gray-200 text-3xl font-medium">
-                    Episodios
+                    Episodios: {{object.episodio}}
                 </h2>
             
             </div>
@@ -49,7 +48,7 @@ HomeFilmes HasheFlix
     </section>
 
 </main>
-<div class="py-10">
+<!-- <div class="py-10">
     <h1>Esse é o detalhe do Filme: {{object.titulo}} </h1>
     <p>{{object}}</p>
     <p>{{object.descrição}}</p>
@@ -63,8 +62,8 @@ HomeFilmes HasheFlix
             <p>Episodio {{ forloop.counter }}: {{ episodio.titulo }}  </p>
         </a>    
         {% endfor %}    
-</div>
-<div class='py-10'>
+</div> -->
+<!-- <div class='py-10'>
     <h2>Filmes Relacionados</h2>
     {% for filme in filmes_relacionado %}
     <p>
@@ -74,5 +73,5 @@ HomeFilmes HasheFlix
     </p>
     {% endfor %}
 
-</div>
+</div> -->
 {% endblock %}

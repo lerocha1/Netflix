@@ -5,6 +5,50 @@ HomeFilmes HasheFlix
 {% load static %}
 
 {% block content %}
+
+<main class="bg-primary_black min-h-screen w-full">
+    <section class="h-screen relative bg-no-repeat pb-8 pl-16 flex items-end bg-cover" style="...">
+        <div>
+            <h2 class="text-6xl font-semibold tex_write my-4">
+                {{object.titulo}}
+            </h2>
+            <p class="w-11/12 md:w-5/12 font-medium text-white my-4">
+                Descrição
+            </p>
+            <div class="flex my-4">
+                <a href="#">
+                    <button class="flex items-center bg-white px-5 rounded-md" style="...">
+                        <ion-icon name="play" class="text-2xl"></ion-icon>
+                        <span class="ml-3 font-medium">
+                            Play
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>        
+    </section>
+    <section class="bg-primary_black flex justify-center py-10">
+        <div class="p-8 w-10/12 relative">
+            <h2 class="text-gray-200 text-3xl font-medium">
+                Description
+            </h2>
+            <div class="flex-justify-left items-center min-w-full movie_lis">
+                <p class="text-gray-200 text-3xl font-medium">
+                    Descrição
+                    Visualizações:
+                </p>
+            </div>
+            <div style="...">
+                <h2 class="text-gray-200 text-3xl font-medium">
+                    Episodios
+                </h2>
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+</main>
 <div class="py-10">
     <h1>Esse é o detalhe do Filme: {{object.titulo}} </h1>
     <p>{{object}}</p>
